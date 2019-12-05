@@ -1,4 +1,4 @@
-class
+class Cash_register
   def apply_discount
   end
   def void_last_transaction
