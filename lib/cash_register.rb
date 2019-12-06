@@ -6,12 +6,6 @@ class CashRegister
     @@total+=@total
     @discount=discount
   end
-  def total=(total)
-    @total=total
-  end
-  def total
-    @total
-  end
   def add_item(name, price, quantity=1)
     @total+=(price*quantity)
   end
@@ -24,5 +18,11 @@ class CashRegister
     end
   end
   def void_last_transaction
+  end
+  def total=(total)
+    @total=total
+  end
+  def total
+    @total
   end
 end
