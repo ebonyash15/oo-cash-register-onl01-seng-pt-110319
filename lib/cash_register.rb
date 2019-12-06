@@ -8,6 +8,7 @@ class CashRegister
   end
   def self.total=(total)
     @@total=total
+  end
   def self.total
     @@total
   end
