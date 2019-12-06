@@ -6,11 +6,11 @@ class CashRegister
     @@total+=@total
     @discount=discount
   end
-  def self.total=(total)
-    @@total=total
+  def total=(total)
+    @total=total
   end
-  def self.total
-    @@total
+  def total
+    @total
   end
   def apply_discount
   end
