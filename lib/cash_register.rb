@@ -13,7 +13,8 @@ class CashRegister
     if @discount==0
       p "There is no discount to apply."
     else
-      @total-=@total*(@discount/100)
+      discount=@discount*@total/100
+      @total-=discount
       p "After the discount, the total comes to $#{@total}."
     end
   end
