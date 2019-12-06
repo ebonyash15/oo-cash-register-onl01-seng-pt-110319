@@ -14,7 +14,7 @@ class CashRegister
       p "There is no discount to apply."
     else
       @total-=@total*(@discount/100)
-      p "Your total is #{@total}."
+      p "After the discount, the total comes to $#{@total}."
     end
   end
   def void_last_transaction
