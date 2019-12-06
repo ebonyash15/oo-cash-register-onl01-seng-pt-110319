@@ -16,6 +16,9 @@ class CashRegister
     @total+=(price*quantity)
   end
   def apply_discount
+    if @discount==0
+      print "There is no discount to apply."
+    end
     @total*=(@discount/100)
     @total
   end
