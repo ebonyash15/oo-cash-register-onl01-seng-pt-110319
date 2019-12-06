@@ -8,6 +8,8 @@ class CashRegister
   end
   def add_item(name, price, quantity=1)
     @total+=(price*quantity)
+    @items=[]
+    @items<<name
   end
   def apply_discount
     if @discount==0
@@ -17,6 +19,9 @@ class CashRegister
       @total-=discount
       p "After the discount, the total comes to $#{@total}."
     end
+  end
+  def items
+    @items
   end
   def void_last_transaction
   end
